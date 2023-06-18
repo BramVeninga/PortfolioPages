@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const welcomeTextElement = document.getElementById('welcome-text');
 
   const welcomeText = 'Loading Bram Veninga...';
-  const typingInterval = 50;
+  const typingInterval = 25;
 
   function typeWelcomeText() {
     let currentWelcomeIndex = 0;

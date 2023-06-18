@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const welcomeTextElement = document.getElementById('welcome-text');
   
     const welcomeText = 'Loading profesional skills...';
-    const typingInterval = 50;
+    const typingInterval = 25;
   
     function typeWelcomeText() {
       let currentWelcomeIndex = 0;
@@ -22,26 +22,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     function typeCodeBlock() {
-      const code = `import { portfolioPieces, competences,} from 'identity';
+      const code = `import {hard skills, soft skills, portfolioPieces,} from 'identity';
   
   export const identity: profile = {
     name: "Bram Veninga",
     userName: "appelvreter123",
-    competences: [
-      { skill: "html", skillType: "hard", proficiency: "High" },
-      { skill: "css", skillType: "soft", proficiency: "High" },
-      { skill: "PHP", proficiency: "basic" },
-      { skill: "Java", proficiency: "High" },
-      { skill: "Javascript / typescript", proficiency: "basic" },
-      { skill: "Python", proficiency: "basic" },
-      { skill: "SQL", proficiency: "basic" },
-      { skill: "C/C++", proficiency: "basic" }
+    hardSkills: [
+      { skill: "Programming skills", , proficiency: "intermediate" },
+      { skill: "Database management", ", proficiency: "high" },
+      { skill: "Web development", proficiency: "basic" },
+      { skill: "System and network administration", proficiency: "intermediate" },
+      { skill: "Agile methodologies", proficiency: "high" },
+      { skill: "Data analysis", proficiency: "intermediate" },
+      { skill: "Project management", proficiency: "high" },
     ],
-    spokenLanguages: [
-      Language.Dutch,
-      Language.English,
-      Language.German,
-      Language.French
+    softSkills: [
+      { skill: "Communication skills", proficiency: "High" },
+      { skill: "Problem-solving ability", proficiency: "High" },
+      { skill: "Critical thinking", proficiency: "basic" },
+      { skill: "Time management", proficiency: "High" },
+      { skill: "Self-motivation", proficiency: "basic" },
+      { skill: "Teamwork", proficiency: "basic" },
+      { skill: "Leadership", proficiency: "basic" },
+      { skill: "Customer orientation", proficiency: "basic" }
+      { skill: "Self-reflection", proficiency: "basic" }
+      { skill: "Creativity", proficiency: "basic" }
+    ],
+    portfolioPieces: [
+     display select buttons
     ],
   };`;
   

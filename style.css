@@ -7,8 +7,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
 }
 
 .container {
@@ -18,6 +27,9 @@ body {
   width: 600px;
   padding: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  overflow-y: auto;
+  max-height: calc(100vh - 220px); /* Aanpassing: bepaal de maximale hoogte van de container */
 }
 
 .code-wrapper {
@@ -26,8 +38,8 @@ body {
   border-radius: 3px;
   padding: 20px;
   margin-bottom: 20px;
+  overflow: auto; /* Toegevoegde eigenschap */
 }
-
 .code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 12px;
@@ -52,6 +64,7 @@ body {
   background-image: url('images/fdb21c0e4f3dbb6ccd9a63c68fce8645.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 footer {
@@ -60,11 +73,6 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
 }
 
 .logo-link {
@@ -92,12 +100,14 @@ footer {
   left: 0;
   width: 100%;
   padding: 10px;
+  padding-bottom: 20px;
 }
 
 .navbar-link {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: large;
   margin-right: 10px;
   flex-direction: row-reverse;
 }
@@ -113,13 +123,15 @@ footer {
 }
 
 .button-container {
-  max-width: 600px;
+  max-width: 2fr;
   max-height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: left;
   margin-top: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 .button {
@@ -134,4 +146,22 @@ footer {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+}
+
+#pdf-container{
+  flex: 1;
+  width: 80%;
+z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  z-index: 2;
 }

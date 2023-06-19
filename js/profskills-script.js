@@ -101,3 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
   {
       alert("Dit bestand is beschikbaar vanaf 23 juni 23:59");
   }
+  function showDPmessage()
+  {
+      alert("Zie de video via de volgende link: https://youtu.be/NzLrmN1zbnE");
+  }

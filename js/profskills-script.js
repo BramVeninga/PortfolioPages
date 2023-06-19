@@ -96,3 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
       alert("My personal email address: " + nameP + '@' + domainP + '.' + tldP
           + "\nMy school email address: " + name + '@' + domain + '.' + tld);
   }
+
+  function showTAmessage()
+  {
+      alert("Dit bestand is beschikbaar vanaf 23 juni 23:59");
+  }

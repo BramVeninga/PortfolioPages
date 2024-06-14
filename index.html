@@ -1,46 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Bram Veninga</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html" class="navbar-link">Home</a>
-    <a href="profskills.html" class="navbar-link">Prof. Skills</a>
-  </div>
 
-  <div class="container">
-    <h1 class="welcome-text" id="welcome-text"></h1>
-    <div class="code-wrapper">
-      <pre class="code" id="code-block"></pre>
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Bram Veninga</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Bram Veninga</p>
+          </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>possibilities</span></li>
+            <li><span>Contact</span></li>
+            <li><span>documentation</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>vision,<br>my job</h1>
+                <button class="cta">Portfolio documentation
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Process analysis</h3>
+                  <p>creative & innovative process analysis, for optimizing existing processes.</p>
+                </a>
+                <a href="#0">
+                  <h3>Software engeneering</h3>
+                  <p>I am capable of developing software in Java, PHP, Python &amp; C#.</p>
+                </a>
+                <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/works-process-s.png" alt="process">
+                      </div>
+                      <p class="slider--item-title">Process analysis</p>
+                      <p class="slider--item-description">creative & innovative process analysis, for optimizing existing processes.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/works-softwareEngeneering.png" alt="software engeneering">
+                      </div>
+                      <p class="slider--item-title">Software engeneering</p>
+                      <p class="slider--item-description">I am capable of developing software in Java, PHP, Python &amp; C#.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>I<br>believe in<br>passionate<br>ideas</h2>
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>Winners</h3>
+                </a>
+                <a href="#0">
+                  <h3>Philosophy</h3>
+                </a>
+                <a href="#0">
+                  <h3>History</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:bram.veninga@student.nhlstenden.com">bram.veninga@student.nhlstenden.com</a>
+                    <a href="tel:+31682651514">+31 6 82 65 15 14</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:bram.veninga@student.nhlstenden.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>Portfolio documentation</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <script src="assets/js/functions.js"></script>
+              <form class="work-request">
+                <div class="work-request--options">
+                    <span class="options-a">
+                        <input id="opt-1" type="checkbox" value="Reflectieverslag" onclick="openPDF('pdf/reflectieverslag.pdf')">
+                        <label for="opt-1">
+                            Reflectieverslag
+                        </label>
+                        <input id="opt-2" type="checkbox" value="Feedback collectie" onclick="openPDF('pdf/feedbackCollectie.pdf')">
+                        <label for="opt-2">
+                            Feedback collectie
+                        </label>
+                        <input id="opt-3" type="checkbox" value="CV" onclick="openPDF('assets/pdf/CV.pdf')">
+                        <label for="opt-3">
+                            CV
+                        </label>
+                    </span>
+                    <span class="options-b">
+                        <input id="opt-4" type="checkbox" value="POP" onclick="openPDF('pdf/POP.pdf')">
+                        <label for="opt-4">
+                            POP
+                        </label>
+                        <input id="opt-5" type="checkbox" value="Hogeschooltaal" onclick="openPDF('assets/pdf/certificaatHST.pdf')">
+                        <label for="opt-5">
+                            Hogeschooltaal
+                        </label>
+                        <input id="opt-6" type="checkbox" value="onderzoeksvoorstel" onclick="openPDF('pdf/onderzoeksvoorstel.pdf')">
+                        <label for="opt-6">
+                            Onderzoeksvoorstel
+                        </label>
+                    </span>
+                    <span class="options-c">
+                        <input id="opt-7" type="checkbox" value="onderzoeksrapport" onclick="openPDF('pdf/onderzoeksrapport.pdf')">
+                        <label for="opt-7">
+                            Onderzoeksrapport
+                        </label>
+                        <input id="opt-8" type="checkbox" value="Scrumm-artifacten" onclick="openPDF('pdf/Scrumm-artifacten.pdf')">
+                        <label for="opt-8">
+                            Scrumm-artifacten
+                        </label>
+                        <input id="opt-9" type="checkbox" value="Edumundo-opdrachten" onclick="openPDF('pdf/Edumundo.pdf')">
+                        <label for="opt-9">
+                            Edumundo opdrachten
+                        </label>
+                        <input id="opt-10" type="checkbox" value="Rene Laan analyses" onclick="openPDF('assets/pdf/RLAP.pdf')">
+                        <label for="opt-10">
+                            Rene Laan analyses
+                        </label>
+                    </span>
+                </div>
+            </form>
+            
+            <script>
+                function openPDF(pdfPath) {
+                    window.open(pdfPath, '_blank');
+                }
+            </script>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Hire us</li>
+  </ul>
+</div>
 
-  <script src="js/Index-script.js"></script>
-  <footer>
-    <div class="footer-container">
-      <a onclick="showDiscord()" class="logo-link">
-        <img src="icons/636e0a6cc3c481a15a141738_icon_clyde_white_RGB.png" alt="Discord icon" class="logo-img">
-      </a>
-      <a href="https://github.com/BramVeninga" class="logo-link">
-        <img src="icons/icons8-github-400.png" alt="Github icon" class="logo-img">
-      </a>
-      <a href="https://www.instagram.com/appelvreter123/" class="logo-link">
-        <img src="icons/Instagram_logo_2016.svg.png" alt="instagram icon" class="logo-img">
-      </a>
-      <a href="https://www.linkedin.com/in/bram-veninga-2434611aa/" class="logo-link">
-        <img src="icons/LinkedIn_icon.svg.png" alt="LinkedIn icon" class="logo-img">
-      </a>
-      <a onclick="showEmail()" class="logo-link">
-        <img src="icons/Outlook.com_icon_(2012-2019).svg.png" alt="Outlook icon" class="logo-img">
-      </a>
-      <a href="https://telegram.me/BramVeninga" class="logo-link">
-        <img src="icons/telegram-svgrepo-com.svg" alt="Telegram icon" class="logo-img">
-      </a>
-    </div>
-  </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
 </body>
 </html>
